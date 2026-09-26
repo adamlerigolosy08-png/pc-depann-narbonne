@@ -3,9 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>PC Dépann' Narbonne — Réparation & montage PC</title>
+<title>PC Dépann' Narbonne — Réparation & montage PC à Narbonne</title>
+<meta name="description" content="Dépannage informatique, réparation PC, montage PC et assistance informatique à Narbonne. Diagnostic, réinstallation Windows, suppression de virus, optimisation. Intervention jusqu'à 10 km autour de Narbonne.">
+<meta name="keywords" content="dépannage informatique Narbonne, réparation PC Narbonne, montage PC Narbonne, assistance informatique Narbonne, réparation ordinateur Narbonne">
+<link rel="canonical" href="https://adamlerigolosy08-png.github.io/pc-depann-narbonne/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="PC Dépann' Narbonne — Réparation & montage PC">
+<meta property="og:description" content="Dépannage informatique, réparation PC et montage PC à Narbonne. Diagnostic clair, prix affichés, intervention jusqu'à 10 km autour de Narbonne.">
+<meta property="og:url" content="https://adamlerigolosy08-png.github.io/pc-depann-narbonne/">
+<meta property="og:image" content="https://adamlerigolosy08-png.github.io/pc-depann-narbonne/logo-pc-depann-narbonne.png">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" type="image/png" href="logo-pc-depann-narbonne.png">
+<link rel="apple-touch-icon" href="logo-pc-depann-narbonne.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "PC Dépann' Narbonne",
+  "image": "https://adamlerigolosy08-png.github.io/pc-depann-narbonne/logo-pc-depann-narbonne.png",
+  "telephone": "+33672253468",
+  "email": "PCdepannNarbonne@gmail.com",
+  "url": "https://adamlerigolosy08-png.github.io/pc-depann-narbonne/",
+  "areaServed": {
+    "@type": "City",
+    "name": "Narbonne"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Narbonne",
+    "addressCountry": "FR"
+  },
+  "priceRange": "20€-100€"
+}
+</script>
 <style>
   :root{
     --bg:#F6F5F1; --ink:#161A1D; --sub:#4B5257; --accent:#1F8A70; --accent-ink:#0B3D31;
@@ -35,10 +72,12 @@
   a{color:inherit;}
   .wrap{max-width:920px; margin:0 auto; padding:0 24px;}
   header{padding:22px 0; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line);}
-  .brand{font-family:var(--mono); font-weight:700; font-size:19px;}
+  .brand{display:flex; align-items:center; gap:10px; font-family:var(--mono); font-weight:700; font-size:19px;}
+  .brand img{height:36px; width:auto; max-width:160px; object-fit:contain;}
   .brand span{color:var(--accent);}
   nav a{font-size:14px; color:var(--sub); text-decoration:none; margin-left:22px;}
   nav a:hover{color:var(--ink);}
+
   .hero{padding:68px 0 56px; display:grid; grid-template-columns:1.2fr 0.8fr; gap:40px; align-items:center;}
   .hero h1{font-size:clamp(32px,5vw,48px); line-height:1.08; max-width:11ch;}
   .hero p{color:var(--sub); font-size:17px; max-width:46ch; margin:18px 0 26px;}
@@ -51,9 +90,11 @@
     position:relative; overflow:hidden;
   }
   .board svg{width:100%; height:100%;}
+
   section{padding:48px 0; border-bottom:1px solid var(--line);}
   .eyebrow{color:var(--accent); font-family:var(--mono); font-size:13px; margin-bottom:8px;}
   section h2{font-size:26px; margin-bottom:22px;}
+
   .prices{display:grid; grid-template-columns:repeat(2,1fr); gap:14px;}
   .price-card{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:18px 20px;}
   .price-card .row{display:flex; justify-content:space-between; align-items:baseline;}
@@ -61,15 +102,27 @@
   .price-card .row span:last-child{font-family:var(--mono); font-weight:700; color:var(--accent);}
   .price-card p{color:var(--sub); font-size:14px; margin:6px 0 0;}
   .note{color:var(--sub); font-size:13px; margin-top:16px;}
+
   .why{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
   .why h3{font-size:16px; margin-bottom:8px;}
   .why p{color:var(--sub); font-size:14px; margin:0;}
+
   .zone p{color:var(--sub); max-width:58ch;}
+
+  .payments{display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-bottom:14px;}
+  .pay-card{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:18px 20px;}
+  .pay-card .icon{font-size:22px; margin-bottom:8px; display:block;}
+  .pay-card h3{font-size:15px; margin-bottom:4px;}
+  .pay-card p{color:var(--sub); font-size:13.5px; margin:0;}
+  .pay-unavailable{border-style:dashed; opacity:0.75;}
+
   .contact{display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;}
   .contact .block{min-width:220px;}
   .contact .block h3{font-size:14px; color:var(--sub); font-weight:600; margin-bottom:6px;}
   .contact .block a, .contact .block div{font-size:16px;}
+
   footer{padding:26px 0 40px; color:var(--sub); font-size:13px;}
+
   @media (max-width:760px){
     .hero{grid-template-columns:1fr;}
     .board{max-width:280px; margin:0 auto;}
@@ -78,116 +131,164 @@
 </style>
 </head>
 <body>
+
 <div class="wrap">
-<header>
-<div class="brand">PC Dépann'<span>Narbonne</span></div>
-<nav>
-<a href="#tarifs">Tarifs</a>
-<a href="#zone">Zone</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
-<div class="hero">
-<div>
-<h1>Votre PC ne répond plus. On s'en occupe.</h1>
-<p>Réparation, montage et optimisation de PC à Narbonne et dans un rayon de 30&nbsp;km. Diagnostic clair, prix affichés, déplacement possible.</p>
-<div class="cta-row">
-<a class="btn btn-primary" href="tel:+33600000000">Appeler — 06 00 00 00 00</a>
-<a class="btn btn-ghost" href="#tarifs">Voir les tarifs</a>
+  <header>
+    <div class="brand">
+      <img src="logo-pc-depann-narbonne.png" alt="PC Dépann' Narbonne - dépannage informatique à Narbonne">
+      <span style="color:var(--ink);">PC Dépann'<span style="color:var(--accent);">Narbonne</span></span>
+    </div>
+    <nav>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#zone">Zone</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>Votre PC ne répond plus. On s'en occupe.</h1>
+      <p>Réparation PC et laptop, montage PC et assistance informatique à Narbonne. Intervention jusqu'à 10&nbsp;km autour de Narbonne. Diagnostic clair, prix affichés.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+33672253468">Appeler — 06 72 25 34 68</a>
+        <a class="btn btn-ghost" href="#tarifs">Voir les tarifs</a>
+      </div>
+    </div>
+    <div class="board" aria-hidden="true">
+      <svg viewBox="0 0 200 200">
+        <rect width="200" height="200" fill="none"/>
+        <g stroke="var(--accent)" stroke-width="2" fill="none" opacity="0.55">
+          <path d="M20 40 H90 V90 H160 V150"/>
+          <path d="M20 100 H60 V160 H140"/>
+          <path d="M180 30 V70 H120 V120"/>
+        </g>
+        <g fill="var(--accent)">
+          <circle cx="20" cy="40" r="4"/><circle cx="160" cy="150" r="4"/>
+          <circle cx="20" cy="100" r="4"/><circle cx="140" cy="160" r="4"/>
+          <circle cx="180" cy="30" r="4"/><circle cx="120" cy="120" r="4"/>
+        </g>
+        <rect x="70" y="70" width="40" height="40" rx="3" fill="none" stroke="var(--ink)" stroke-width="1.5" opacity="0.35"/>
+      </svg>
+    </div>
+  </div>
+
+  <section id="tarifs">
+    <div class="eyebrow">Tarifs</div>
+    <h2>Des prix clairs, annoncés à l'avance</h2>
+    <div class="prices">
+      <div class="price-card">
+        <div class="row"><span>Diagnostic</span><span>20&nbsp;€</span></div>
+        <p>On identifie la panne avant de toucher à quoi que ce soit.</p>
+      </div>
+      <div class="price-card">
+        <div class="row"><span>Nettoyage + pâte thermique</span><span>25&nbsp;€</span></div>
+        <p>Dépoussiérage complet, remplacement de la pâte thermique.</p>
+      </div>
+      <div class="price-card">
+        <div class="row"><span>Réinstallation Windows</span><span>35&nbsp;€</span></div>
+        <p>Réinstallation propre, pilotes et mises à jour inclus.</p>
+      </div>
+      <div class="price-card">
+        <div class="row"><span>Suppression virus / malware</span><span>30&nbsp;€</span></div>
+        <p>Nettoyage complet, lenteurs, plantages, optimisation générale.</p>
+      </div>
+      <div class="price-card">
+        <div class="row"><span>Récupération de données</span><span>dès 40&nbsp;€</span></div>
+        <p>Fichiers effacés ou disque défaillant, PC ou laptop.</p>
+      </div>
+      <div class="price-card">
+        <div class="row"><span>Réparation PC & laptop</span><span>dès 30&nbsp;€</span></div>
+        <p>Panne matérielle, panne d'écran ou de charge sur laptop, diagnostic inclus.</p>
+      </div>
+      <div class="price-card">
+        <div class="row"><span>Montage PC (pièces fournies)</span><span>60&nbsp;€</span></div>
+        <p>Assemblage, câblage propre, tests de stabilité.</p>
+      </div>
+      <div class="price-card">
+        <div class="row"><span>Montage + conseil pièces</span><span>dès 80&nbsp;€</span></div>
+        <p>+ prix des composants, choisis selon ton budget et ton usage.</p>
+      </div>
+    </div>
+    <p class="note">Prix de la main-d'œuvre uniquement. Les pièces éventuelles sont facturées séparément, au prix réel.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">Pourquoi ce service</div>
+    <h2>Fait pour du gaming et de la VR, pas seulement du bureautique</h2>
+    <div class="why">
+      <div>
+        <h3>Setups gaming & VR</h3>
+        <p>Configuration pensée pour le jeu, le montage de casques VR (Quest) et l'optimisation des FPS.</p>
+      </div>
+      <div>
+        <h3>Rapide</h3>
+        <p>Diagnostic sous 24 à 48h, la plupart des réparations le jour même.</p>
+      </div>
+      <div>
+        <h3>Sans surprise</h3>
+        <p>Prix annoncé avant intervention, facture détaillée pièces / main-d'œuvre.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="zone" class="zone">
+    <div class="eyebrow">Zone d'intervention</div>
+    <h2>Intervention jusqu'à 10&nbsp;km autour de Narbonne</h2>
+    <p>Déplacement à domicile possible sur Narbonne et les communes proches (Coursan, Bages, Sallèles-d'Aude, Cuxac-d'Aude, Armissan...). Dépôt possible aussi si tu préfères ne pas te déplacer.</p>
+  </section>
+
+  <section id="paiement">
+    <div class="eyebrow">Modes de paiement</div>
+    <h2>Paiement simple, en personne</h2>
+    <div class="payments">
+      <div class="pay-card">
+        <span class="icon">💳</span>
+        <h3>Carte bancaire — TPE</h3>
+        <p>Paiement par carte bancaire via TPE, directement lors de l'intervention.</p>
+      </div>
+      <div class="pay-card">
+        <span class="icon">💶</span>
+        <h3>Paiement en main propre</h3>
+        <p>Espèces acceptées, paiement en main propre lors de la remise du PC.</p>
+      </div>
+    </div>
+    <p class="note">PayPal actuellement indisponible. Aucune donnée bancaire n'est collectée sur ce site.</p>
+  </section>
+
+  <section id="avis">
+    <div class="eyebrow">Avis clients</div>
+    <h2>Fiche Google Business</h2>
+    <p style="color:var(--sub); max-width:58ch;">La fiche Google Business de PC Dépann' Narbonne est en cours de mise en place. Le lien vers les avis clients sera ajouté ici dès qu'elle sera active.</p>
+    <p class="note">[Lien Google Business à ajouter ici]</p>
+  </section>
+
+  <section id="contact" style="border-bottom:none;">
+    <div class="eyebrow">Contact</div>
+    <h2>Besoin d'aide avec votre PC ? Contactez-nous</h2>
+    <div class="cta-row" style="margin-bottom:26px;">
+      <a class="btn btn-primary" href="tel:+33672253468">Appeler : 06 72 25 34 68</a>
+      <a class="btn btn-ghost" href="mailto:PCdepannNarbonne@gmail.com">Envoyer un email</a>
+    </div>
+    <div class="contact">
+      <div class="block">
+        <h3>Téléphone</h3>
+        <a href="tel:+33672253468">06 72 25 34 68</a>
+      </div>
+      <div class="block">
+        <h3>Email</h3>
+        <a href="mailto:PCdepannNarbonne@gmail.com">PCdepannNarbonne@gmail.com</a>
+      </div>
+      <div class="block">
+        <h3>Localisation</h3>
+        <div>Narbonne, France</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    PC Dépann' Narbonne · Micro-entreprise · Narbonne, France · <a href="tel:+33672253468">06 72 25 34 68</a> · © 2026
+  </footer>
 </div>
-</div>
-<div class="board" aria-hidden="true">
-<svg viewBox="0 0 200 200">
-<rect width="200" height="200" fill="none"/>
-<g stroke="var(--accent)" stroke-width="2" fill="none" opacity="0.55">
-<path d="M20 40 H90 V90 H160 V150"/>
-<path d="M20 100 H60 V160 H140"/>
-<path d="M180 30 V70 H120 V120"/>
-</g>
-<g fill="var(--accent)">
-<circle cx="20" cy="40" r="4"/><circle cx="160" cy="150" r="4"/>
-<circle cx="20" cy="100" r="4"/><circle cx="140" cy="160" r="4"/>
-<circle cx="180" cy="30" r="4"/><circle cx="120" cy="120" r="4"/>
-</g>
-<rect x="70" y="70" width="40" height="40" rx="3" fill="none" stroke="var(--ink)" stroke-width="1.5" opacity="0.35"/>
-</svg>
-</div>
-</div>
-<section id="tarifs">
-<div class="eyebrow">Tarifs</div>
-<h2>Des prix clairs, annoncés à l'avance</h2>
-<div class="prices">
-<div class="price-card">
-<div class="row"><span>Diagnostic</span><span>20&nbsp;€</span></div>
-<p>On identifie la panne avant de toucher à quoi que ce soit.</p>
-</div>
-<div class="price-card">
-<div class="row"><span>Nettoyage + pâte thermique</span><span>25&nbsp;€</span></div>
-<p>Dépoussiérage complet, remplacement de la pâte thermique.</p>
-</div>
-<div class="price-card">
-<div class="row"><span>Réinstallation Windows</span><span>35&nbsp;€</span></div>
-<p>Réinstallation propre, pilotes et mises à jour inclus.</p>
-</div>
-<div class="price-card">
-<div class="row"><span>Dépannage logiciel</span><span>30&nbsp;€</span></div>
-<p>Virus, lenteurs, plantages, optimisation générale.</p>
-</div>
-<div class="price-card">
-<div class="row"><span>Montage PC (pièces fournies)</span><span>60&nbsp;€</span></div>
-<p>Assemblage, câblage propre, tests de stabilité.</p>
-</div>
-<div class="price-card">
-<div class="row"><span>Montage + conseil pièces</span><span>dès 80&nbsp;€</span></div>
-<p>+ prix des composants, choisis selon ton budget et ton usage.</p>
-</div>
-</div>
-<p class="note">Prix de la main-d'œuvre uniquement. Les pièces éventuelles sont facturées séparément, au prix réel.</p>
-</section>
-<section>
-<div class="eyebrow">Pourquoi ce service</div>
-<h2>Fait pour du gaming et de la VR, pas seulement du bureautique</h2>
-<div class="why">
-<div>
-<h3>Setups gaming & VR</h3>
-<p>Configuration pensée pour le jeu, le montage de casques VR (Quest) et l'optimisation des FPS.</p>
-</div>
-<div>
-<h3>Rapide</h3>
-<p>Diagnostic sous 24 à 48h, la plupart des réparations le jour même.</p>
-</div>
-<div>
-<h3>Sans surprise</h3>
-<p>Prix annoncé avant intervention, facture détaillée pièces / main-d'œuvre.</p>
-</div>
-</div>
-</section>
-<section id="zone" class="zone">
-<div class="eyebrow">Zone d'intervention</div>
-<h2>Narbonne et 30&nbsp;km alentour</h2>
-<p>Déplacement à domicile possible sur Narbonne, Sallèles-d'Aude, Coursan, Gruissan, Bages et les communes proches. Dépôt possible aussi si tu préfères ne pas te déplacer.</p>
-</section>
-<section id="contact" style="border-bottom:none;">
-<div class="eyebrow">Contact</div>
-<h2>On en parle</h2>
-<div class="contact">
-<div class="block">
-<h3>Téléphone</h3>
-<a href="tel:+33600000000">06 00 00 00 00</a>
-</div>
-<div class="block">
-<h3>Email</h3>
-<a href="mailto:contact@pcdepannnarbonne.fr">contact@pcdepannnarbonne.fr</a>
-</div>
-<div class="block">
-<h3>Annonces</h3>
-<div>Leboncoin — recherche "PC Dépann' Narbonne"</div>
-</div>
-</div>
-</section>
-<footer>
-    Micro-entreprise · Narbonne (11100) · © 2026
-</footer>
-</div>
+
 </body>
 </html>

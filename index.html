@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PC Dépann' Narbonne — Réparation & montage PC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F6F5F1; --ink:#161A1D; --sub:#4B5257; --accent:#1F8A70; --accent-ink:#0B3D31;
+    --card:#FFFFFF; --line:#DEDBD2; --mono:'Space Grotesk',ui-monospace,monospace;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#14181A; --ink:#F2F1EC; --sub:#A9AFA9; --accent:#39C9A0; --accent-ink:#0F2A22;
+      --card:#1C2124; --line:#2B3134;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#14181A; --ink:#F2F1EC; --sub:#A9AFA9; --accent:#39C9A0; --accent-ink:#0F2A22;
+    --card:#1C2124; --line:#2B3134;
+  }
+  html{scroll-padding-top:env(safe-area-inset-top,0px);}
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    height:100%;
+  }
+  h1,h2,h3{font-family:var(--mono); font-weight:700; margin:0; letter-spacing:-0.01em;}
+  a{color:inherit;}
+  .wrap{max-width:920px; margin:0 auto; padding:0 24px;}
+  header{padding:22px 0; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line);}
+  .brand{font-family:var(--mono); font-weight:700; font-size:19px;}
+  .brand span{color:var(--accent);}
+  nav a{font-size:14px; color:var(--sub); text-decoration:none; margin-left:22px;}
+  nav a:hover{color:var(--ink);}
+  .hero{padding:68px 0 56px; display:grid; grid-template-columns:1.2fr 0.8fr; gap:40px; align-items:center;}
+  .hero h1{font-size:clamp(32px,5vw,48px); line-height:1.08; max-width:11ch;}
+  .hero p{color:var(--sub); font-size:17px; max-width:46ch; margin:18px 0 26px;}
+  .cta-row{display:flex; gap:12px; flex-wrap:wrap;}
+  .btn{display:inline-block; padding:13px 22px; border-radius:3px; font-size:15px; font-weight:600; text-decoration:none; border:1px solid transparent;}
+  .btn-primary{background:var(--accent); color:var(--accent-ink);}
+  .btn-ghost{border-color:var(--line); color:var(--ink);}
+  .board{
+    aspect-ratio:1/1; border-radius:6px; background:var(--card); border:1px solid var(--line);
+    position:relative; overflow:hidden;
+  }
+  .board svg{width:100%; height:100%;}
+  section{padding:48px 0; border-bottom:1px solid var(--line);}
+  .eyebrow{color:var(--accent); font-family:var(--mono); font-size:13px; margin-bottom:8px;}
+  section h2{font-size:26px; margin-bottom:22px;}
+  .prices{display:grid; grid-template-columns:repeat(2,1fr); gap:14px;}
+  .price-card{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:18px 20px;}
+  .price-card .row{display:flex; justify-content:space-between; align-items:baseline;}
+  .price-card .row span:first-child{font-weight:600;}
+  .price-card .row span:last-child{font-family:var(--mono); font-weight:700; color:var(--accent);}
+  .price-card p{color:var(--sub); font-size:14px; margin:6px 0 0;}
+  .note{color:var(--sub); font-size:13px; margin-top:16px;}
+  .why{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .why h3{font-size:16px; margin-bottom:8px;}
+  .why p{color:var(--sub); font-size:14px; margin:0;}
+  .zone p{color:var(--sub); max-width:58ch;}
+  .contact{display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;}
+  .contact .block{min-width:220px;}
+  .contact .block h3{font-size:14px; color:var(--sub); font-weight:600; margin-bottom:6px;}
+  .contact .block a, .contact .block div{font-size:16px;}
+  footer{padding:26px 0 40px; color:var(--sub); font-size:13px;}
+  @media (max-width:760px){
+    .hero{grid-template-columns:1fr;}
+    .board{max-width:280px; margin:0 auto;}
+    .prices, .why{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="brand">PC Dépann'<span>Narbonne</span></div>
+<nav>
+<a href="#tarifs">Tarifs</a>
+<a href="#zone">Zone</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<div class="hero">
+<div>
+<h1>Votre PC ne répond plus. On s'en occupe.</h1>
+<p>Réparation, montage et optimisation de PC à Narbonne et dans un rayon de 30&nbsp;km. Diagnostic clair, prix affichés, déplacement possible.</p>
+<div class="cta-row">
+<a class="btn btn-primary" href="tel:+33600000000">Appeler — 06 00 00 00 00</a>
+<a class="btn btn-ghost" href="#tarifs">Voir les tarifs</a>
+</div>
+</div>
+<div class="board" aria-hidden="true">
+<svg viewBox="0 0 200 200">
+<rect width="200" height="200" fill="none"/>
+<g stroke="var(--accent)" stroke-width="2" fill="none" opacity="0.55">
+<path d="M20 40 H90 V90 H160 V150"/>
+<path d="M20 100 H60 V160 H140"/>
+<path d="M180 30 V70 H120 V120"/>
+</g>
+<g fill="var(--accent)">
+<circle cx="20" cy="40" r="4"/><circle cx="160" cy="150" r="4"/>
+<circle cx="20" cy="100" r="4"/><circle cx="140" cy="160" r="4"/>
+<circle cx="180" cy="30" r="4"/><circle cx="120" cy="120" r="4"/>
+</g>
+<rect x="70" y="70" width="40" height="40" rx="3" fill="none" stroke="var(--ink)" stroke-width="1.5" opacity="0.35"/>
+</svg>
+</div>
+</div>
+<section id="tarifs">
+<div class="eyebrow">Tarifs</div>
+<h2>Des prix clairs, annoncés à l'avance</h2>
+<div class="prices">
+<div class="price-card">
+<div class="row"><span>Diagnostic</span><span>20&nbsp;€</span></div>
+<p>On identifie la panne avant de toucher à quoi que ce soit.</p>
+</div>
+<div class="price-card">
+<div class="row"><span>Nettoyage + pâte thermique</span><span>25&nbsp;€</span></div>
+<p>Dépoussiérage complet, remplacement de la pâte thermique.</p>
+</div>
+<div class="price-card">
+<div class="row"><span>Réinstallation Windows</span><span>35&nbsp;€</span></div>
+<p>Réinstallation propre, pilotes et mises à jour inclus.</p>
+</div>
+<div class="price-card">
+<div class="row"><span>Dépannage logiciel</span><span>30&nbsp;€</span></div>
+<p>Virus, lenteurs, plantages, optimisation générale.</p>
+</div>
+<div class="price-card">
+<div class="row"><span>Montage PC (pièces fournies)</span><span>60&nbsp;€</span></div>
+<p>Assemblage, câblage propre, tests de stabilité.</p>
+</div>
+<div class="price-card">
+<div class="row"><span>Montage + conseil pièces</span><span>dès 80&nbsp;€</span></div>
+<p>+ prix des composants, choisis selon ton budget et ton usage.</p>
+</div>
+</div>
+<p class="note">Prix de la main-d'œuvre uniquement. Les pièces éventuelles sont facturées séparément, au prix réel.</p>
+</section>
+<section>
+<div class="eyebrow">Pourquoi ce service</div>
+<h2>Fait pour du gaming et de la VR, pas seulement du bureautique</h2>
+<div class="why">
+<div>
+<h3>Setups gaming & VR</h3>
+<p>Configuration pensée pour le jeu, le montage de casques VR (Quest) et l'optimisation des FPS.</p>
+</div>
+<div>
+<h3>Rapide</h3>
+<p>Diagnostic sous 24 à 48h, la plupart des réparations le jour même.</p>
+</div>
+<div>
+<h3>Sans surprise</h3>
+<p>Prix annoncé avant intervention, facture détaillée pièces / main-d'œuvre.</p>
+</div>
+</div>
+</section>
+<section id="zone" class="zone">
+<div class="eyebrow">Zone d'intervention</div>
+<h2>Narbonne et 30&nbsp;km alentour</h2>
+<p>Déplacement à domicile possible sur Narbonne, Sallèles-d'Aude, Coursan, Gruissan, Bages et les communes proches. Dépôt possible aussi si tu préfères ne pas te déplacer.</p>
+</section>
+<section id="contact" style="border-bottom:none;">
+<div class="eyebrow">Contact</div>
+<h2>On en parle</h2>
+<div class="contact">
+<div class="block">
+<h3>Téléphone</h3>
+<a href="tel:+33600000000">06 00 00 00 00</a>
+</div>
+<div class="block">
+<h3>Email</h3>
+<a href="mailto:contact@pcdepannnarbonne.fr">contact@pcdepannnarbonne.fr</a>
+</div>
+<div class="block">
+<h3>Annonces</h3>
+<div>Leboncoin — recherche "PC Dépann' Narbonne"</div>
+</div>
+</div>
+</section>
+<footer>
+    Micro-entreprise · Narbonne (11100) · © 2026
+</footer>
+</div>
+</body>
+</html>
